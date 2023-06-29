@@ -1,0 +1,52 @@
+nav{
+    
+    .mobile{
+        display: none;
+        width: 100%;
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+
+            .menuD{
+                position: fixed;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                gap: 125px;
+                padding: 95px 95px;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 395px;
+                overflow-y: auto;
+                transform: translateX(500px);
+                transition: all 600ms;
+                background-color: white;
+
+                .close{
+                    cursor: pointer;
+                }
+
+                .content{
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    gap: 100px;
+
+                    .links{
+                        display: flex;
+                        height: 420px;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+}

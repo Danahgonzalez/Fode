@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+    body{
+        nav{
+            .pc{
+                display: none;
+            }
+    
+            .mobile{
+                display: block;
+            }
+        }
+    
+        main{
+            flex-direction: column;
+            align-items : center;
+    
+        }
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    body{    
+
+        main{
+            .info{
+                width: 100%;
+            }
+    
+            img{
+                width: 100%;
+            }
+        }
+
+        nav{
+    
+            .mobile{
+                
+                header{
+        
+                    .menuD{
+                        width: 100%;
+                        padding: 95px 50px;
+                    }
+                }
+                
+            }
+        }
+
+    }
+}

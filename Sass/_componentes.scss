@@ -1,0 +1,46 @@
+$yellow: #FEEE53;
+$black: black;
+$gray: gray;
+$white: white;
+
+@mixin btns($color,$bg){
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 40px;
+    color: $color;
+    text-decoration: none;
+    background-color: $bg;
+    cursor: pointer;
+}
+
+@mixin texts($size,$width){
+    color: $black;
+    font-size: $size;
+    font-weight: $width;
+    text-decoration: none
+}
+
+.text-regular{
+    @include texts(1.5rem, 400)
+}
+
+.text-nl{
+    @include texts(1rem, 200);
+}
+
+.text-md{
+    @include texts(2rem, 600);
+}
+
+.text-lg{
+    @include texts(3rem, 700);
+}
+
+.btn-yellow{
+    @include btns($black,$yellow);
+}
+
+.btn-white{
+    @include btns($gray,$white);
+}
